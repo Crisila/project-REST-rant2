@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 
 // It is important that this route is at the bottom, otherwise it will override your other pages.
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page</h1>')
+    // res.status(404).send('<h1>404 Page</h1>')
+    res.render('error404')
 })
 
 app.listen(process.env.PORT)
