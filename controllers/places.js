@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
 
 // GET /places/new
 router.get('/new', (req, res) => {
-    res.render('places/new')
+  res.render('places/new')
 })
 
 module.exports = router;
