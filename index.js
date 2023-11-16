@@ -1,15 +1,20 @@
+// Modules and Globals
 require('dotenv').config()
-
 const express = require('express')
 const app = express()
 
-app.set('view engine', 'jsx')
+// Express Settings
+app.set('views',__dirname + '/views')
 app.engine('jsx', require('express-react-views').createEngine())
-
 app.use('/places', require('./controllers/places'))
+app.use(express.static('public'))
 // The first argument to app.use, /places sets all routes in the places controller relative to /places. This means that /places will be added in front of any other path we define in the controller.
 
-// ===========================================================
+
+
+// Controllers & Routes
+app.set('view engine', 'jsx')
+
 
 app.get('/', (req, res) => {
     res.render('home')

@@ -17,6 +17,8 @@ function index(data) {
         <h1>PLACES INDEX PAGE</h1>
         {placesFormatted}
       </main>
+    
+     
     </Def>
   );
 }
