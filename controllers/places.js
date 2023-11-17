@@ -2,6 +2,12 @@ const { Router } = require('express')
 
 const router = require('express').Router()
 
+// GET /places/new
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
+
+
  // GET /places
 router.get('/', (req, res) => {
     let places = [{
@@ -19,14 +25,20 @@ router.get('/', (req, res) => {
 }]
 
 
+// POST
+router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST /places')
+})
+
   res.render('places/index', { places })
   
 })
 
 
-// GET /places/new
-router.get('/new', (req, res) => {
-  res.render('places/new')
-})
+
+
+
+
 
 module.exports = router;
