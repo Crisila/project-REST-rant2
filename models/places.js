@@ -1,13 +1,13 @@
 module.exports = [{
-    name: 'Sushi Rest',
-  city: 'Seattle',
-  state: 'WA',
-  cuisines: 'Japanese',
-  pic: '/images/sushi-rest.jpg'
+    name: 'H-Thai-ML',
+    city: 'Seattle',
+    state: 'WA',
+    cuisines: 'Thai, Pan-Asian',
+    pic: '/images/h-thai-ml-tables.jpg'
 }, {
-  name: 'Backyard',
-  city: 'Phoenix',
-  state: 'AZ',
-  cuisines: 'Coffee, Bakery, Brunch',
-  pic: '/images/second-rest.jpg'
+    name: 'Coding Cat Cafe',
+    city: 'Phoenix',
+    state: 'AZ',
+    cuisines: 'Coffee, Bakery',
+    pic: '/images/coffee-cat.jpg'
 }]
