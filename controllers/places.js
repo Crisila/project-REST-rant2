@@ -27,7 +27,9 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
+// SHOW
 router.get('/:id', (req, res) => {
+  let id = Number (req.params.id)
   if (isNaN(id)) {
     res.render('error404')
   }
