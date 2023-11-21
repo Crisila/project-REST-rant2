@@ -5,7 +5,7 @@ function show(data) {
   return (
     <Def>
       <main>
-        <h1>({data.place.name})</h1>
+        <h1>{data.place.name}</h1>
 
         <img src={data.place.pic} alt="Restaurant photo" />
         
@@ -25,12 +25,13 @@ function show(data) {
       </main>
 
       <main>
-        <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
-          Edit
+        <a href={`/places/${data.id}/edit`} className="btn btn-primary"> 
+          <i class="bi bi-pencil"></i> Edit
         </a>  
+        
         <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
-          <button type="submit" className="btn btn-danger">
-            Delete
+          <button type="submit" className="btn btn-primary">
+            <i class="bi bi-pencil"></i> Delete
           </button>
         </form>     
 
