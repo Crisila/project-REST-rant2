@@ -6,12 +6,14 @@ function show(data) {
     <Def>
       <main>
         <h1>({data.place.name})</h1>
+
+        <img src={data.place.pic} alt="Restaurant photo" />
         
         <h3>Rating</h3>
         <p>No rated</p>
 
-        <h3>Description</h3>
-        <p>Location and Cuisine</p>
+        <h3>Description: </h3>
+        <p>{ data.place.cuisines } located at {data.place.city}, {data.place.state}. </p>
 
       </main>
 

@@ -10,34 +10,60 @@ function new_form() {
           <div>
             <label htmlFor="name">Place Name
             </label>
-            <input className="form-group" id="name" name='name' required/>
+            <input
+              className="form-group"
+              id="name"
+              name='name'
+              required
+            />
           </div>
 
           <div>
             <label htmlFor="pic">Place Picture  
             </label>
-            <input className="form-group" type='url' id="pic" name='pic' />
+            <input
+              className="form-group"
+              type='url'
+              id="pic"
+              name='pic'
+            />
           </div>
 
           <div>
             <label htmlFor="city">City
             </label>
-            <input className="form-group" id="city" name='city' />
+            <input
+              className="form-group"
+              id="city"
+              name='city'
+            />
           </div>
 
           <div>
             <label htmlFor="state">State
             </label>
-            <input className="form-group" id="state" name='state' />
+            <input
+              className="form-group"
+              id="state"
+              name='state'
+            />
           </div>
 
           <div>
             <label htmlFor="cuisines">Cuisines
             </label>
-            <input className="form-group" id="cuisines" name='cuisines' required/>
+            <input
+              className="form-group"
+              id="cuisines"
+              name='cuisines'
+              required
+            />
           </div>
 
-          <input className='btn btn-primary' type="submit" value="Add Place" />
+          <input
+            className='btn btn-primary'
+            type="submit"
+            value="Add Place" />
 
         </form>
       </main>
