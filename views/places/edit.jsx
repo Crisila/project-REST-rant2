@@ -1,14 +1,14 @@
 const React = require("react");
 const Def = require("../default");
 
-function edit_form({place, index}) {
+function edit_form({place}) {
   return (
     <Def>
       <main>
         <h1>Edit Place</h1>
-        <form method="POST" action={`/places/${index}?_method=PUT`}>
-          <div className="row">
+        <form method="POST" action={`/places/${place.id}?_method=PUT`}>
           <div className="form-group col-sm-6">
+          <div>
             <label htmlFor="name">Place Name</label>
               <input
                 className="form-control"
@@ -27,10 +27,10 @@ function edit_form({place, index}) {
               value={place.pic} />
           </div>
 
-          </div>
+          
 
 
-          <div>
+          <div className="form-group col-sm-6">
             <label htmlFor="city">City
             </label>
             <input
@@ -41,7 +41,7 @@ function edit_form({place, index}) {
             />
           </div>
 
-          <div>
+          <div className="form-group col-sm-6">
             <label htmlFor="state">State
             </label>
             <input
@@ -52,7 +52,7 @@ function edit_form({place, index}) {
             />
           </div>
 
-          <div>
+          <div className="form-group col-sm-6">
             <label htmlFor="cuisines">Cuisines
             </label>
             <input
@@ -61,7 +61,9 @@ function edit_form({place, index}) {
               name='cuisines'
               value={place.cuisines}
             />
-          </div>
+            </div>
+            </div>
+
 
           <input className='btn btn-primary' type="submit" value="Update Place" />
 
