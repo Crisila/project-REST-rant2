@@ -5,26 +5,48 @@ function show(data) {
   return (
     <Def>
       <main>
-        <h1>{data.place.name}</h1>
+        <div className="row">
+          <div className="col-sm-6">
 
-        <img src={data.place.pic} alt={data.place.name} />
+            <img src={data.place.pic} alt={data.place.name} />
+            </div>
         
-        <h3>Rating</h3>
-        <p>No rated</p>
+          <div className="col-sm-6">
+            <h1>{data.place.name}</h1>
 
-        <h3>Description: </h3>
-        <p>{data.place.cuisines} located at {data.place.city}, {data.place.state}, serving { data.place.cuisines }</p>
+            <h3>Located in {data.place.city}, {data.place.state}</h3>
+
+            </div>
+          
+          <div className="col-sm-6">
         
-        <p>Founded: { data.place.founded }</p>
+            <h3>Rating</h3>
+            <p>Not rated</p>
 
-      </main>
+            </div>
+          
+          <div className="col-sm-6">
 
-      <main>
-        <div>
-          <h3>Comments</h3>
-          <p>No comments yet!</p> 
+            <h2>Description: </h2>
+            <h4>{data.place.showEstablished()}</h4>
+            <h5>Serving {data.place.cuisines}</h5>
+          
+          </div>
+            
+            <div className="col-sm-6">
+              
+            <p>Founded: { data.place.founded }</p>
+          </div>
+
+
+            <h3>Comments</h3>
+            <p>No comments yet!</p> 
+
+
         </div>
       </main>
+      
+      
 
       <main>
         <a
@@ -43,8 +65,8 @@ function show(data) {
           </button>
         </form>     
 
-
-      </main>
+        </main>
+      
 
     </Def>
   )
