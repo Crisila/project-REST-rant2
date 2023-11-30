@@ -9,21 +9,21 @@ function show(data) {
           <div className="col-sm-6">
 
             <img src={data.place.pic} alt={data.place.name} />
-            </div>
+          </div>
         
           <div className="col-sm-6">
             <h1>{data.place.name}</h1>
-
-            <h3>Located in {data.place.city}, {data.place.state}</h3>
-
-            </div>
-          
-          <div className="col-sm-6">
-        
             <h3>Rating</h3>
             <p>Not rated</p>
 
-            </div>
+          </div>
+          
+          <div className="col-sm-6">
+        
+
+            <h3>Located in {data.place.city}, {data.place.state}</h3>
+
+           </div>
           
           <div className="col-sm-6">
 
@@ -34,21 +34,11 @@ function show(data) {
           </div>
             
             <div className="col-sm-6">
-              
             <p>Founded: { data.place.founded }</p>
           </div>
 
+          <div className="col-sm-6">
 
-            <h3>Comments</h3>
-            <p>No comments yet!</p> 
-
-
-        </div>
-      </main>
-      
-      
-
-      <main>
         <a
           href={`/places/${data.place.id}/edit`}
           className="btn btn-primary"> 
@@ -65,7 +55,22 @@ function show(data) {
           </button>
         </form>     
 
-        </main>
+
+        </div>
+
+
+
+
+        </div>
+      </main>
+      
+      
+
+      <main>
+            <h3>Comments</h3>
+            <p>No comments yet!</p> 
+
+      </main>
       
 
     </Def>
