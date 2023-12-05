@@ -62,6 +62,17 @@ function edit_form({place}) {
               value={place.cuisines}
             />
             </div>
+
+            <div className="form-group col-sm-6">
+            <label htmlFor="founded">Cuisines
+            </label>
+            <input
+              className="form-group"
+              id="founded"
+              name='founded'
+              value={place.founded}
+            />
+            </div>
             </div>
 
 
