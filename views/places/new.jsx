@@ -16,7 +16,7 @@ function new_form(data) {
         <h1>Add a New Place</h1>
         {message}
         <form method="POST" action="/places">
-          <div>
+          <div className="form-group">
             <label htmlFor="name">Place Name
             </label>
             <input
@@ -27,7 +27,7 @@ function new_form(data) {
             />
           </div>
 
-          <div>
+          <div className="form-group">
             <label htmlFor="pic">Place Picture  
             </label>
             <input
@@ -38,7 +38,7 @@ function new_form(data) {
             />
           </div>
 
-          <div>
+          <div className="form-group">
             <label htmlFor="city">City
             </label>
             <input
@@ -48,7 +48,7 @@ function new_form(data) {
             />
           </div>
 
-          <div>
+          <div className="form-group">
             <label htmlFor="state">State
             </label>
             <input
@@ -58,7 +58,7 @@ function new_form(data) {
             />
           </div>
 
-          <div>
+          <div className="form-group">
             <label htmlFor="cuisines">Cuisines
             </label>
             <input
