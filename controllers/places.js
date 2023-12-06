@@ -197,11 +197,11 @@ router.post('/:id/comment', (req, res) => {
 
 
 // DELETE COMMENT: delete place from db
-router.delete('/:id', (req, res) => {
+router.delete('/:id/comment/:commentId', (req, res) => {
   db.Place.
-    findByIdAndDelete(req.params.id)
+    findByIdAndDelete(req.params.commentId)
       .then(() => {
-        res.redirect("/places");
+        res.redirect(`/places/${req.params.id}`);
       })
       .catch((err) => {
         console.log('err', err);

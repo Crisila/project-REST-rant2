@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  color: cornflowerblue;
+  color: rgb(71, 97, 145);
 }
 
 img {
@@ -17,7 +17,7 @@ img {
 */
 
 nav {
-  background-color: cornflowerblue;
+  background-color: rgb(71, 97, 145);
   padding: 10px;
 }
 
@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 body {
-  background-color: lightblue;
+  background-color: whitesmoke;
   text-align: center;
 }
 
@@ -50,4 +50,21 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
+}
+
+
+
+#index-a:link {
+  color: rgb(71, 97, 145);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }

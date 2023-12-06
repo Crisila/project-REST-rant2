@@ -140,7 +140,11 @@ function show(data) {
               className="btn btn-primary"
               value="Add Comment"
             />
-            </form>         
+          </form>
+          {/* <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
+            <input type="hidden" name="_method" value="DELETE"/>
+            <input type="submit" value="Delete Comment" className="btn btn-danger" />
+          </form> */}
 </div>
 
         
