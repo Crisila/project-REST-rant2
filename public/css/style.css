@@ -10,6 +10,11 @@ img {
   
 }
 
+.home-img {
+  height: 42vw;
+  object-fit: cover;
+}
+
 /* 
 #home-image {
 }
@@ -67,4 +72,9 @@ a:hover {
 /* selected link */
 a:active {
   color: blue;
+}
+
+/* Index CSS */
+.rest-indeximg {
+  width: 30%;
 }

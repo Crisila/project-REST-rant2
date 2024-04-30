@@ -8,6 +8,7 @@ function home () {
         <h1>REST-Rant</h1>
         <div>
           <img
+            className="home-img"
             src="/images/Passionfruit-waffle.jpg"
             alt="Passionfruit Waffle"
           />
