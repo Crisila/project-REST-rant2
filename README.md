@@ -5,8 +5,10 @@ REST-Rant is an app where users can review restaurants.
 
 
 ## Demo
+Once dependcies are installed and application is running:
+Add a restaurant:
 
-
+![adding restaurant][/Users/Crisila/2023-Software-Dev/BE/rest-rant/public/images/Adding-Demo.jpg]
 
 ## Techonologies
 
@@ -18,6 +20,8 @@ REST-Rant is an app where users can review restaurants.
 ## Issues
 
 
+
+## API Documentation
 | **Method** | **Path**                 | **Purpose**                                      |
 |------------|--------------------------|--------------------------------------------------|
 | GET        | /                        | Home Page                                        |
