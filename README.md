@@ -1,4 +1,5 @@
 # Project: REST-Rant
+Completed by Crisila Ballecer
 
 ## Description
 REST-Rant is an app where users can review restaurants.
